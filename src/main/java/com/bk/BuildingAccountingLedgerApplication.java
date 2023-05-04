@@ -25,26 +25,32 @@ public class BuildingAccountingLedgerApplication {
                System.out.print("Enter option: ");
                userInput = scanner.nextLine();
 
-               switch (userInput.toUpperCase()) {
-                   case "D":
-                       // TODO: Add deposit functionality
-                       break;
-                   case "P":
-                       // TODO: Make payment functionality
-                       break;
-                   case "R":
-                       //TODO: Reports Functionality
-                       break;
-                   case "X":
-                       System.out.println("Exitng Financial Tracker...");
-                       break;
-                   default:
-                       System.out.println("Invalid option, please try again.");
+               while (true) {
+                   private static void displayOptions displayOptions();
+                   String option = input.nextLine().toUpperCase();
+                   switch (option) {
+                       case "D":
+                           addDeposit(transactions);
+                           break;
+                       case "P":
+                           makePayment(transactions);
+                           break;
+                       case "L":
+                           viewLedger(transactions);
+                           break;
+                       case "R":
+                           runReports(transactions);
+                           break;
+                       case "X":
+                           input.close();
+                           System.exit(0);
+                           break;
+                       default:
+                           System.out.println("Invalid option. Please try again.");
 
-                   case
-               }
-           } while(!userInput.equalsIgnoreCase("X"));
+
+                           () {
+                       }
+
+    private static void displayOptions() {
     }
-}
-
-
