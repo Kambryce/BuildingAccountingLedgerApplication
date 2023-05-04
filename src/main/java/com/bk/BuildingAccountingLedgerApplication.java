@@ -1,13 +1,12 @@
 package com.bk;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 import java.util.Scanner;
-import java.io.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.time.format.DateTimeFormatter;
 
 //Create a CLI application.
 //Track all financial transactions for business or for personal use.
@@ -28,10 +27,10 @@ public class BuildingAccountingLedgerApplication {
 
                switch (userInput.toUpperCase()) {
                    case "D":
-                       // TODO: Add deposit functionaility
+                       // TODO: Add deposit functionality
                        break;
                    case "P":
-                       // TODO: Make payment functionaility
+                       // TODO: Make payment functionality
                        break;
                    case "R":
                        //TODO: Reports Functionality
@@ -41,8 +40,11 @@ public class BuildingAccountingLedgerApplication {
                        break;
                    default:
                        System.out.println("Invalid option, please try again.");
+
+                   case
                }
            } while(!userInput.equalsIgnoreCase("X"));
     }
 }
+
 
